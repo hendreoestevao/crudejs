@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="main.js" defer></script>
+    <title>CRUD</title>
+</head>
+
+<body>
+    
+    </div>
+    <main>
+        <h1>CADASTRAR PRODUTOS</h1>
+        <h1>PRODUTOS CADASTRADOS</h1>
+       
+       
+        <button type="button" class="button blue mobile" id="cadastrarproduto">Cadastrar Produto</button>
+        <table id="tableproduto" class="records">
+          
+            <thead>
+                <tr>
+     
+                        <th>Nome Produto</th>
+                        <th>Fabricante Produto</th>
+                        <th>Categoria Produto</th>
+                        <th>Quantidade</th>
+                        <th>Valor</th>
+                   
+                </tr>
+            </thead>
+        
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                <ul>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome"required>
+                    <input type="text" id="fabricante" class="modal-field" placeholder="Fabricante" required>
+                    <input type="text" id="categoria" class="modal-field" placeholder="Categoria" required>
+                    <input type="number" id="quantidade" class="modal-field" placeholder="Quantidade" required>
+                    <input type="number" id="valor" class="modal-field" placeholder="Valor" required>
+                </form>
+            </ul>  
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Hendreo Estevão
+    </footer>
+</body>
+
+</html>
